@@ -8,11 +8,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home:Material(
-        child:Center(
+      home:Scaffold(
+        appBar: AppBar(
+        title:Text("flutter App")
+    ),
+        body:Center(
           child:Container(
         child:Text("welcome  flutter"),
     ),
+      ),
+    drawer:Drawer(
       ),
       ),
     );
